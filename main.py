@@ -12,7 +12,7 @@ guessed_states = []
 
 is_game_on = True
 while is_game_on:
-    guess = (screen.textinput(title=f"{len(guessed_states)}/28 states correct", prompt="What are the states in U S")
+    guess = (screen.textinput(title=f"{len(guessed_states)}/28 states correct", prompt="What are the states in India")
              .title())
 
     if guess in all_states:
