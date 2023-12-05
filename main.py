@@ -10,8 +10,7 @@ data = pandas.read_csv("28_india_states.csv")
 all_states = data.state.to_list()
 guessed_states = []
 
-is_game_on = True
-while is_game_on:
+while len(guessed_states) < 28:
     guess = (screen.textinput(title=f"{len(guessed_states)}/28 states correct", prompt="What are the states in India")
              .title())
 
